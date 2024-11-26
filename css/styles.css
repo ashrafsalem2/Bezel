@@ -253,10 +253,16 @@ body {
     font-size: 68px !important;
     text-align: center;
   }
+  .hero .hero_overlay .carousel .carousel-inner .carousel-item h4{
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 767px) {
   .hero .hero_overlay .carousel .carousel-inner .carousel-item .display1 {
     font-size: 62px !important;
+    text-align: center;
+  }
+  .hero .hero_overlay .carousel .carousel-inner .carousel-item h4{
     text-align: center;
   }
 }
