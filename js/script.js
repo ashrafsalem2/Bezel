@@ -43,6 +43,12 @@ function showClose() {
  * hide ul
  */
 function close_panel() {
+  bars.classList.replace("blink_bars", "blink_back");
+  setInterval(() => {
+    bars.classList.remove("blink_back");
+  }, 1000);
+
+  bars.classList.replace("fa-close", "fa-bars");
   mainDiv.classList.remove("show");
 }
 
