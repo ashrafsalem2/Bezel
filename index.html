@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bezel | Creative Multi-purpose HTML Templete</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- custome styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="navbarSupportedContent">
+    <!--  loading stage -->
+    <div class="loadingScreen">
+      <span class="loader"></span>
+    </div>
+
+    <!-- Header ( Hero + nav) -->
+    <header id="home" class="min-vh-100">
+      <!-- NavBar -->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom p-0 border-secondary"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bolder" href="#">
+            <img src="./img/logo/logo-light.png" class="logo w-50" alt="logo" />
+          </a>
+          <span
+            style="padding: 5px; color: black; cursor: pointer; font-size: 20px"
+            class="close_item"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="showClose()"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            onclick="close_panel()"
+          >
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 border-end border-secondary"
+              onclick="close_panel()"
+            >
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  ><span>Home</span></a
+                >
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#about"><span>About</span></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#team"><span>Team</span></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#services"><span>Services</span></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#pricing"><span>Pricing</span></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#works"><span>Works</span></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#contact"><span>Contact</span></a>
+              </li>
+            </ul>
+            <div class="social_links ms-3">
+              <ul
+                class="list-unstyled d-flex justify-content-center align-content-center column-gap-4 my-auto"
+              >
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero vh-100">
+        <div class="container-fluid p-0">
+          <div class="hero_overlay">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide vh-100"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="item_1">
+                    <div
+                      class="item_1_content d-flex flex-column justify-content-center align-items-center vh-100"
+                    >
+                      <h1 class="display1">Get Awesome</h1>
+                      <h4 class="my-2">
+                        We are an innovative company making digital stuff.
+                      </h4>
+                      <div class="actions mt-3">
+                        <button
+                          class="btn btn-info py-3 px-5 border-0 rounded-1 me-3 active"
+                        >
+                          Read More
+                        </button>
+                        <button
+                          class="btn btn-outline-light bg-transparent py-3 px-5 border-1 rounded-1"
+                          onmousedown="onmouseclickMoveDown(this)"
+                          onmouseup="onmouseUpMoveUp(this)"
+                        >
+                          Contact
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="item_2">
+                    <div
+                      class="item_2_content d-flex flex-column justify-content-center align-items-center vh-100"
+                    >
+                      <h1 class="display1">Create With Bezel.</h1>
+                      <h4 class="my-2">
+                        We help ambitious companies create new value.
+                      </h4>
+                      <div class="actions mt-3">
+                        <button
+                          class="btn btn-info py-3 px-5 border-0 rounded-1 me-3 active"
+                        >
+                          Hire Us
+                        </button>
+                        <button
+                          class="btn btn-outline-light bg-transparent py-3 px-5 border-1 rounded-1"
+                          onmousedown="onmouseclickMoveDown(this)"
+                          onmouseup="onmouseUpMoveUp(this)"
+                        >
+                          Services
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- carousel Navigators -->
+    <div
+      class="red_button d-flex flex-column position-absolute top-50 translate-middle-y"
+    >
+      <a
+        class="arrow btn btn-outline-light w-100 rounded-0 border-start-0 p-3"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <a
+        class="arrow btn btn-outline-light w-100 rounded-0 border-start-0 p-3"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <!-- sections -->
+    <main>
+      <!-- About -->
+      <section id="about" class="about my-5">
+        <div class="container pt-5 text-center">
+          <div class="row">
+            <div class="col-sm-12">
+              <div
+                class="about_container d-flex flex-column justify-content-center align-items-center row-gap-3"
+              >
+                <header>
+                  <h6 class="text-uppercase">Who We Are</h6>
+                </header>
+                <div
+                  class="about_info d-flex justify-content-center align-items-center"
+                >
+                  <p class="lead py-3 col-8">
+                    We are an innovative company. We develop and design
+                    <span class="text-slider-items d-none"
+                      >softwares, apps, websites</span
+                    >
+                    <strong class="text-slider"></strong>
+
+                    for costumers around the world. Our clients are some of the
+                    most forward-looking companies in the world.
+                  </p>
+                </div>
+                <div class="about_action mb-5">
+                  <button class="btn_read">READ MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="text-secondary my-5" />
+
+      <!-- Team -->
+      <section id="team" class="team my-5">
+        <div class="container pt-5 text-center">
+          <header class="header_section">
+            <h1>Creative Team</h1>
+            <p class="text-secondary fs-5">We are digital thinkers</p>
+          </header>
+          <div class="row pt-5 g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="team_container team_1">
+                <div class="img_holder position-relative overflow-hidden">
+                  <img src="./img/team/team-1.jpg" alt="team 1" class="w-100" />
+                  <div
+                    class="team_overlay bg-opacity-50 d-flex flex-column align-items-start justify-content-between p-3"
+                  >
+                    <div class="card_social">
+                      <ul
+                        class="list-unstyled d-flex justify-content-center align-content-center column-gap-4 my-auto"
+                      >
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card_info">
+                      <p
+                        class="text-white m-0 p-0 text-start text-uppercase fs-6"
+                      >
+                        Luke Cage
+                      </p>
+                      <p class="text-start text-white">Founder & CEO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="team_container team_2">
+                <div class="img_holder position-relative overflow-hidden">
+                  <img src="./img/team/team-2.jpg" alt="team 2" class="w-100" />
+                  <div
+                    class="team_overlay bg-opacity-50 d-flex flex-column align-items-start justify-content-between p-3"
+                  >
+                    <div class="card_social">
+                      <ul
+                        class="list-unstyled d-flex justify-content-center align-content-center column-gap-4 my-auto"
+                      >
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card_info">
+                      <p
+                        class="text-white m-0 p-0 text-start text-uppercase fs-6"
+                      >
+                        Jessica Jones
+                      </p>
+                      <p class="text-start text-white">Product Designer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="team_container team_3">
+                <div class="img_holder position-relative overflow-hidden">
+                  <img src="./img/team/team-3.jpg" alt="team 3" class="w-100" />
+                  <div
+                    class="team_overlay bg-opacity-50 d-flex flex-column align-items-start justify-content-between p-3"
+                  >
+                    <div class="card_social">
+                      <ul
+                        class="list-unstyled d-flex justify-content-center align-content-center column-gap-4 my-auto"
+                      >
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card_info">
+                      <p
+                        class="text-white m-0 p-0 text-start text-uppercase fs-6"
+                      >
+                        Matt Murdock
+                      </p>
+                      <p class="text-start text-white">Lead Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="team_container team_4">
+                <div class="img_holder position-relative overflow-hidden">
+                  <img src="./img/team/team-4.jpg" alt="team 4" class="w-100" />
+                  <div
+                    class="team_overlay bg-opacity-50 d-flex flex-column align-items-start justify-content-between p-3"
+                  >
+                    <div class="card_social">
+                      <ul
+                        class="list-unstyled d-flex justify-content-center align-content-center column-gap-4 my-auto"
+                      >
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card_info">
+                      <p
+                        class="text-white m-0 p-0 text-start text-uppercase fs-6"
+                      >
+                        Claire Temple
+                      </p>
+                      <p class="text-start text-white">Sales Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="services py-5">
+        <div class="container pt-5">
+          <div class="row g-5 py-5 g-sm-3">
+            <div class="col-md-4 col-lg-2 item_1">
+              <div class="services_section_1_container p-1 text-center">
+                <div class="service_info">
+                  <p class="text-uppercase">Stunning Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2 item_2">
+              <div class="services_section_1_container p-1 text-center">
+                <div class="service_info">
+                  <p class="text-uppercase">Time Saver</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2 item_3">
+              <div class="services_section_1_container p-1 text-center">
+                <div class="service_info">
+                  <p class="text-uppercase">Clean Code</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2 item_4">
+              <div class="services_section_1_container p-1 text-center">
+                <div class="service_info">
+                  <p class="text-uppercase">Customizable</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2 item_5">
+              <div class="services_section_1_container p-1 text-center">
+                <div class="service_info">
+                  <p class="text-uppercase">Perfect Layout</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2 item_6">
+              <div class="services_section_1_container p-1 text-center">
+                <div class="service_info">
+                  <p class="text-uppercase">Retina Ready</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-5 py-5 g-sm-3">
+            <div class="col-md-12 col-lg-6">
+              <div class="services_section_2_container">
+                <div class="section_2_1">
+                  <header class="header_section">
+                    <h1 class="text-white">What We Do.</h1>
+                  </header>
+                  <p
+                    class="col-lg-8 col-md-12 text-white py-4 text-md-center text-lg-start"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam ipsam ullam incidunt itaque nemo omnis temporibus
+                    totam quibusdam repellat vero, recusandae excepturi
+                    dignissimos velit et alias amet, quia facilis perferendis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="section_2_2">
+                <div class="row g-4">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="section_2_content">
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Research
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Opportunity Analysis
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Consulting
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Brand Planning
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Customer Support
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="section_2_content">
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Logo & Branding
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Style guides
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Motion graphics
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        UX/UI-design
+                      </div>
+                      <div
+                        class="element d-flex text-white column-gap-2 align-items-center mb-3"
+                      >
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                        </span>
+                        Social media design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="pricing py-5">
+        <div class="container pt-5 text-center">
+          <header class="header_section">
+            <h1>Cheap Prices</h1>
+            <p class="text-secondary fs-5">We provide the best quality.</p>
+          </header>
+          <div class="row py-5 g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="price_card">
+                <div class="card p-3 rounded-0 border-white">
+                  <div class="card-body text-start">
+                    <div class="plan_name">Starter</div>
+                    <div
+                      class="plan_description border-bottom border-secondary border-opacity-10 mb-2"
+                    >
+                      <h2 class="fs-1 mt-2 mb-3">
+                        <span>$</span>
+                        9
+                      </h2>
+                    </div>
+                    <ul
+                      class="features list-unstyled d-flex flex-column justify-content-center align-items-start row-gap-1"
+                    >
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Connections</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">24/7 Support</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Full SSL Protection</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Channels</span>
+                      </li>
+                    </ul>
+                    <div class="plan_cta my-4">
+                      <a
+                        class="button text-decoration-none text-white px-2 py-2 rounded-1"
+                        href="#"
+                        data-open="get-pro-modal"
+                        aria-controls="get-pro-modal"
+                        aria-haspopup="true"
+                        tabindex="0"
+                        >Sign Up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="price_card">
+                <div class="card p-3 rounded-0 border-white">
+                  <div class="card-body text-start">
+                    <div class="plan_name">Silver</div>
+                    <div
+                      class="plan_description border-bottom border-secondary border-opacity-10 mb-2"
+                    >
+                      <h2 class="fs-1 mt-2 mb-3">
+                        <span>$</span>
+                        1 9
+                      </h2>
+                    </div>
+                    <ul
+                      class="features list-unstyled d-flex flex-column justify-content-center align-items-start row-gap-1"
+                    >
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Connections</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">24/7 Support</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Full SSL Protection</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Channels</span>
+                      </li>
+                    </ul>
+                    <div class="plan_cta my-4">
+                      <a
+                        class="button text-decoration-none text-white px-2 py-2 rounded-1"
+                        href="#"
+                        data-open="get-pro-modal"
+                        aria-controls="get-pro-modal"
+                        aria-haspopup="true"
+                        tabindex="0"
+                        >Sign Up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="price_card scale">
+                <div class="card p-3 rounded-0 border-white">
+                  <div class="card-body text-start">
+                    <div class="plan_name">
+                      Gold
+                      <span>BEST VALUE</span>
+                    </div>
+                    <div
+                      class="plan_description border-bottom border-secondary border-opacity-10 mb-2"
+                    >
+                      <h2 class="fs-1 mt-2 mb-3">
+                        <span>$</span>
+                        2 9
+                      </h2>
+                    </div>
+                    <ul
+                      class="features list-unstyled d-flex flex-column justify-content-center align-items-start row-gap-1"
+                    >
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Connections</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">24/7 Support</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Full SSL Protection</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Channels</span>
+                      </li>
+                    </ul>
+                    <div class="plan_cta my-4">
+                      <a
+                        class="button text-decoration-none text-white px-2 py-2 rounded-1"
+                        href="#"
+                        data-open="get-pro-modal"
+                        aria-controls="get-pro-modal"
+                        aria-haspopup="true"
+                        tabindex="0"
+                        >Sign Up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="price_card">
+                <div class="card p-3 rounded-0 border-white">
+                  <div class="card-body text-start">
+                    <div class="plan_name">Platinum</div>
+                    <div
+                      class="plan_description border-bottom border-secondary border-opacity-10 mb-2"
+                    >
+                      <h2 class="fs-1 mt-2 mb-3">
+                        <span>$</span>
+                        4 9
+                      </h2>
+                    </div>
+                    <ul
+                      class="features list-unstyled d-flex flex-column justify-content-center align-items-start row-gap-1"
+                    >
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Connections</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">24/7 Support</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Full SSL Protection</span>
+                      </li>
+                      <li class="my-2">
+                        <span class="text-muted">Unlimited Channels</span>
+                      </li>
+                    </ul>
+                    <div class="plan_cta my-4">
+                      <a
+                        class="button text-decoration-none text-white px-2 py-2 rounded-1"
+                        href="#"
+                        data-open="get-pro-modal"
+                        aria-controls="get-pro-modal"
+                        aria-haspopup="true"
+                        tabindex="0"
+                        >Sign Up</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works -->
+      <section id="works" class="works py-5">
+        <div class="container py-5 text-center">
+          <header>
+            <p>Happy Customers</p>
+          </header>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div
+                      class="item_center d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="clients_content d-flex flex-column justify-content-center align-items-center card rounded border-white w-75"
+                      >
+                        <img
+                          src="./img/testimonial/testimonial-1.jpg"
+                          class="my-3 card-img-top rounded-circle"
+                          alt="test1"
+                        />
+                        <div
+                          class="text-center mt-4 d-flex flex-column justify-content-center align-items-center row-gap-2"
+                        >
+                          <h4>Marissa Mayer</h4>
+                          <span class="testimonial_info">CEO, Yahoo</span>
+                          <p class="col-8 text-opacity-75 pb-5">
+                            Quo rem cumque facere modi beatae. Deleniti nisi,
+                            repellat quae aspernatur consequatur consequuntur,
+                            fugit asperiores delectus beatae. Quae veniam,
+                            quidem cupiditate quia? Ut iste deleniti.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div
+                      class="item_center d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="clients_content d-flex flex-column justify-content-center align-items-center card rounded border-white w-75"
+                      >
+                        <img
+                          src="./img/testimonial/testimonial-2.jpg"
+                          class="my-3 card-img-top rounded-circle"
+                          alt="test2"
+                        />
+                        <div
+                          class="text-center mt-4 d-flex flex-column justify-content-center align-items-center row-gap-2"
+                        >
+                          <h4>Mark Zuckerberg</h4>
+                          <span class="testimonial_info"
+                            >Founder & CEO, Facebook</span
+                          >
+                          <p class="col-8 text-opacity-75 pb-5">
+                            Quo rem cumque facere modi beatae. Deleniti nisi,
+                            repellat quae aspernatur consequatur consequuntur,
+                            fugit asperiores delectus beatae. Quae veniam,
+                            quidem cupiditate quia? Ut iste deleniti.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <div class="contact_map">
+                <div class="mapswrapper">
+                  <iframe
+                    class="w-100 vh-100"
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=New%20York&zoom=10&maptype=roadmap"
+                  ></iframe
+                  ><a href="https://www.taxuni.com/w9-form/">w9 form 2025</a
+                  ><style>
+                    .mapswrapper {
+                      background: #fff;
+                      position: relative;
+                    }
+                    .mapswrapper iframe {
+                      border: 0;
+                      position: relative;
+                      z-index: 2;
+                    }
+                    .mapswrapper a {
+                      color: rgba(0, 0, 0, 0);
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      z-index: 0;
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="contact_content p-5">
+                <header class="header_section">
+                  <h1>Get In Touch</h1>
+                  <p class="text-secondary fs-5">Let's work together.</p>
+                </header>
+                <form action="" class="form">
+                  <div class="row py-2">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-2">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-2">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="phone">Your Number</label>
+                        <input
+                          type="number"
+                          name="phone"
+                          id="phone"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-2">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                          name="message"
+                          id="message"
+                          rows="5"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-2">
+                    <div class="col-sm-12">
+                      <button class="border border-white px-4 py-3 text-white">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- boostrap scriopt -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Typed script -->
+    <script src="./js/typed.umd.js"></script>
+    <!-- jquery -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!-- custome script -->
+    <script src="./js/script.js"></script>
+    <script>
+      // for loading screen
+
+      var loadingScreen = document.querySelector(".loadingScreen");
+      function loadSpinner() {
+        loadingScreen.style.display = "none";
+      }
+      window.addEventListener("load", function () {
+        setTimeout(loadSpinner, 500);
+      });
+      // $(".fa-solid").click(toggle);
+      // function toggle() {
+      //   $(".fa-solid").toggleClass("fa-bars fa-times");
+      // }
+
+      // for typed js
+      if ($(".text-slider").length == 1) {
+        var typed_strings = $(".text-slider-items").text();
+
+        var typed = new Typed(".text-slider", {
+          strings: typed_strings.split(", "),
+          typeSpeed: 50,
+          loop: true,
+          backDelay: 600,
+          backSpeed: 30,
+        });
+      }
+    </script>
+  </body>
+</html>
